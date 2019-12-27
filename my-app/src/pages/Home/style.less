@@ -1,0 +1,151 @@
+@nice-blue:pink;
+@light-blue: @nice-blue + #111;
+.header { color: @light-blue; }
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    header{
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        background: #FFBD00;
+        .header-Left{
+            width: 1.4rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-Center{
+           flex: 1;
+           padding: .2rem 0rem;
+           box-sizing: border-box;
+           input{
+               width: 100%;
+               height: 100%;
+               border: 0rem;
+               border-radius: .4rem;
+               outline: none;
+               text-indent: .1rem;
+               color: #cccccc;
+           }
+        }
+        .header-Right{
+            width: .8rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    section{
+        flex: 1;
+        overflow: auto;
+        background: #f0efed;
+        padding-bottom: .4rem;
+        box-sizing: border-box;
+       
+        .nav_List{
+            width: 100%;
+            height:auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: .5rem 0rem;
+            box-sizing: border-box;
+            background: white;
+            dl{
+                width: 20%;
+                height: auto;
+                text-align: center;
+                margin: 0rem;
+                
+                dt{
+                    padding: 0rem .2rem;
+                    box-sizing: border-box;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+                dd{
+                    line-height: .3rem;
+                    font-size: .2rem;
+                }
+                
+            }
+        }
+        .List{
+           width: 100%;
+           height: auto;
+           background: white;
+           margin-top: .2rem;
+           h1{
+               width: 100%;
+               line-height: .6rem;
+               padding: 0rem .2rem;
+               box-sizing: border-box;
+               span{
+                   display: block;
+                   border-bottom: .02rem solid #cccccc;
+               }
+           }
+           .box{
+               width: 100%;
+               height: auto;
+               padding-left: .1rem;
+               box-sizing: border-box;
+            dl{
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                display: flex;
+                padding: .2rem 0rem;
+                box-sizing: border-box;
+                dt{
+                    height: auto;
+                    img{
+                        width: 1.8rem;
+                        height: auto;
+                        display: block;
+                    }
+                }
+                dd{
+                    flex: 1;
+                    padding-left: .1rem;
+                    padding-right: .1rem;
+                    box-sizing: border-box;
+                    h3{
+                        font-size: .2rem;
+                    }
+                    h4{
+                        font-size: .2rem;
+                        .float-right{
+                            float: right;
+                        }
+                        .color{
+                            color: #fd6e0e;
+                            font-size: .26rem;
+                        }
+                    }
+                }
+            }
+           }
+           
+           .box::after{
+               content:  " ";
+               display: block;
+               width: 100%;
+               height: .02rem;
+               background: #cccccc;
+           }
+        }
+      
+    }
+    section::-webkit-scrollbar{
+        width: 0rem;
+    }
+}
